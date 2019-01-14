@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 
-const Todo = ({text, onClick}) => {
+const Todo = ({text, onClick, completed}) => {
   return (
-    <li onClick={onClick} >
+    <li onClick={onClick} style={
+     { textDecoration: completed ? 'line-through' : 'none'}
+    }>
       {text}
     </li>
   )
