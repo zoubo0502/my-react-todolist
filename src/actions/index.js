@@ -9,3 +9,14 @@ export const toggleTodo = (id) => ({
   type: 'TOGGLE_TODO',
   id
 })
+
+export const setVisibility = (filter) => ({
+  type: 'SET_VISIBILITY',
+  filter
+})
+
+export const VISIBILITY = ({
+  SHOW_ALL: 'SHOW_ALL',
+  SHOW_UNCOMPLETED: 'SHOW_UNCOMPLETED',
+  SHOW_COMPLETED: 'SHOW_COMPLETED'
+})

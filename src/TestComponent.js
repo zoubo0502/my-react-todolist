@@ -4,6 +4,8 @@ import TodoList from "./components/TodoList";
 import Link from "./components/Link";
 import AddTodo from "./containers/AddTodo";
 import VisibleTodos from "./containers/VisibleTodos";
+import FilterLink from "./containers/FilterLink";
+import { VISIBILITY } from "./actions";
 
 export const TestComponent = () => {
   const todos = [
@@ -22,6 +24,7 @@ export const TestComponent = () => {
         bbbb
       </Link>
       <VisibleTodos></VisibleTodos>
+      <FilterLink filter={VISIBILITY.SHOW_COMPLETED}>show completed</FilterLink>
     </div>
   );
 };
