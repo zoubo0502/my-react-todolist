@@ -3,6 +3,7 @@ import Todo from "./components/Todo";
 import TodoList from "./components/TodoList";
 import Link from "./components/Link";
 import AddTodo from "./containers/AddTodo";
+import VisibleTodos from "./containers/VisibleTodos";
 
 export const TestComponent = () => {
   const todos = [
@@ -20,6 +21,7 @@ export const TestComponent = () => {
       <Link active={false} onClick={()=>alert("testLink")}>
         bbbb
       </Link>
+      <VisibleTodos></VisibleTodos>
     </div>
   );
 };
