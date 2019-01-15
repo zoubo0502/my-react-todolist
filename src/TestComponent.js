@@ -2,6 +2,7 @@ import React from "react";
 import Todo from "./components/Todo";
 import TodoList from "./components/TodoList";
 import Link from "./components/Link";
+import AddTodo from "./containers/AddTodo";
 
 export const TestComponent = () => {
   const todos = [
@@ -10,6 +11,7 @@ export const TestComponent = () => {
   ];
   return (
     <div>
+      <AddTodo></AddTodo>
       <Todo text={"testTodo"} onClick={() => alert("ok")} />
       <TodoList todoClick={() => alert("testTodoList")} todos={todos} />
       <Link active={true} onClick={()=>alert("testLink")}>
